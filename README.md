@@ -19,7 +19,6 @@ The architecture includes the following steps:
 
 To get started, you will need to have the following prerequisites: 
 * An AWS account
-
     * Permission to access AWS IoT Core, Lambda, and DynamoDB
 * CareBand’s SafeTrack Demo Kit
 * A LoRaWAN gateway (any gateway that operates on the US915 band)
