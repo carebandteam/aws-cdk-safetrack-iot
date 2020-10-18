@@ -1,5 +1,6 @@
 ## Build and Deploy a Contact Tracing Solution with AWS IoT Core & SafeTrack Lite
 
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 ### Architecture
 
