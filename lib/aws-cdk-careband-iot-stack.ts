@@ -48,7 +48,7 @@ export class AwsCdkCarebandIotStack extends cdk.Stack {
     // SafeTrackHttpApi
 
     const orderSafeTrackHttpApi = new HttpApi(this, 'OrderSafeTrackHttpApi', {
-      apiName: 'order-safetrack-lite-integration',
+      apiName: 'order-safetrack-lite',
     });
 
     // SafeTrackHttpApi Route
