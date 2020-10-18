@@ -1,5 +1,5 @@
 ## Build and Deploy a Contact Tracing Solution with AWS IoT Core & SafeTrack Lite
----
+
 
 ### Architecture
 
