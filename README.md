@@ -41,7 +41,6 @@ The stack consists of:
 
 ![Cloud9 Environment](images/cloud9.png)
 
-* Install Node.js as explained [here](https://nodejs.org/en/download/package-manager/)
 * Install AWS CDK
 First create the AWS CDK Toolkit. The toolkit is a command-line utility which allows you to work with CDK apps.
 
