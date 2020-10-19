@@ -37,9 +37,13 @@ The stack consists of:
 * An API gateway
 
 ### Steps
-* Setup AWS account [profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-config) or create an [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/create-environment-main.html) environment.
+* Setup AWS account [profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-config) or create an [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/create-environment-main.html) environment. Cloud9 will provide you terminal access to run AWS CLI. Click on "Create Environment". Provide any environment name and accept the rest of the default parameters.
+
+![Cloud9 Environment](images/cloud9.png)
+
 * Install Node.js as explained [here](https://nodejs.org/en/download/package-manager/)
 * Install AWS CDK
+First create the AWS CDK Toolkit. The toolkit is a command-line utility which allows you to work with CDK apps.
 
     `npm install -g aws-cdk`
 
