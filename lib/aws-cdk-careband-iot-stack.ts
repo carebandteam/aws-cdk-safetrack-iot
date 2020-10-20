@@ -65,5 +65,11 @@ export class AwsCdkCarebandIotStack extends cdk.Stack {
 
     dynamoDBTable.grantReadWriteData(safeTrackDataLmabda);
 
+    // new cdk.CfnOutput(this, 'HTTP API: ', { value : orderSafeTrackHttpApi.url });
+
+    new cdk.CfnOutput(this, 'HTTP API Url', {
+      value: orderSafeTrackHttpApi.url ?? 'Something went wrong with the deploy'
+    });
+    
   }
 }
