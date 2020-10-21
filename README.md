@@ -61,7 +61,7 @@ First create the AWS CDK Toolkit. The toolkit is a command-line utility which al
     cdk init app -l typescript
     ```
 
-* Copy the AWS Lambda functions under the `src` folder
+* Copy the AWS Lambda functions into the `src` folder
 * Open `lib/aws-cdk-caraeband-iot-stack.ts` file using an editor
 * Create a DynamoDB Table
 ```ts
