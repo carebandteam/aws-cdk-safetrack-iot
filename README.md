@@ -51,7 +51,7 @@ First create the AWS CDK Toolkit. The toolkit is a command-line utility which al
     `npm upgrade -g aws-cdk`
 
 * Create a CDK project
-    ```
+    ```bash
     mkdir aws-cdk-caraeband-iot
     cd aws-cdk-caraeband-iot
     cdk init app -l typescript
@@ -59,7 +59,7 @@ First create the AWS CDK Toolkit. The toolkit is a command-line utility which al
 
 * Open `lib/aws-cdk-caraeband-iot-stack.ts` file using an editor
 * Create a DynamoDB Table
-```
+```ts
     // safetrack-data Table
 
     const tableName = 'safetrack-data';
@@ -72,7 +72,7 @@ First create the AWS CDK Toolkit. The toolkit is a command-line utility which al
     });
 ```
 * Create two Lambda functions
-```
+```ts
     // SafeTrackApiFunction
 
     const safeTrackApiLambda = new LambdaFunction(this, 'SafeTrackApiFunction', {
@@ -92,7 +92,7 @@ First create the AWS CDK Toolkit. The toolkit is a command-line utility which al
     });
 ```
 * Create a Lambda Proxy Integration
-```
+```ts
     // SafeTrackApiProxyIntegration
 
     const safeTrackApiLambdaProxyIntegration = new LambdaProxyIntegration({
@@ -100,7 +100,7 @@ First create the AWS CDK Toolkit. The toolkit is a command-line utility which al
     });
 ```
 * Create an HTTP Api
-```
+```ts
     // SafeTrackHttpApi
 
     const orderSafeTrackHttpApi = new HttpApi(this, 'OrderSafeTrackHttpApi', {
@@ -109,7 +109,7 @@ First create the AWS CDK Toolkit. The toolkit is a command-line utility which al
     });
 ```
 * Create an HTTP Api Route
-```
+```ts
     // SafeTrackHttpApi Route
 
     orderSafeTrackHttpApi.addRoutes({
@@ -119,7 +119,7 @@ First create the AWS CDK Toolkit. The toolkit is a command-line utility which al
     });
 ```
 * Grant ReadWrite access to DynamoDB Table
-```
+```ts
     //Grant ReadWrite access of DynamoDB Table to Lambda Functions
 
     dynamoDBTable.grantReadWriteData(safeTrackApiLambda);
@@ -127,14 +127,14 @@ First create the AWS CDK Toolkit. The toolkit is a command-line utility which al
     dynamoDBTable.grantReadWriteData(safeTrackDataLmabda);
 ```
 * Bootstrap an environment
-```
+```bash
 npm install
 npm run build
 cdk bootstrap
 ```
 
 * Deploy the stack
-```
+```bash
 cdk synth
 cdk deploy
 ```
