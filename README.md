@@ -51,13 +51,13 @@ The stack consists of:
 First create the AWS CDK Toolkit. The toolkit is a command-line utility which allows you to work with CDK apps.
 
     ```bash
-    $ npm install -g aws-cdk
+     npm install -g aws-cdk
     ```
 
 * Upgrade AWS CDK
 
     ```bash
-    $ npm upgrade -g aws-cdk
+     npm upgrade -g aws-cdk
     ```
 
 * Create a CDK project
@@ -139,14 +139,14 @@ First create the AWS CDK Toolkit. The toolkit is a command-line utility which al
 ```
 * Bootstrap an environment
 ```bash
-$ npm install
-$ npm run build
-$ cdk bootstrap
+ npm install
+ npm run build
+ cdk bootstrap
 ```
 
 * Deploy the stack
 ```bash
-$ cdk synth
-$ cdk deploy
+ cdk synth
+ cdk deploy
 ```
 
