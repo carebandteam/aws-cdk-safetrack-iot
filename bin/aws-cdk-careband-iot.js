@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("source-map-support/register");
+const cdk = require("@aws-cdk/core");
+const aws_cdk_careband_iot_stack_1 = require("../lib/aws-cdk-careband-iot-stack");
+const app = new cdk.App();
+// new AwsCdkCarebandIotStack(app, 'AwsCdkCarebandIotStackWest2', {
+//     env: { region: "us-west-2" },
+// });
+new aws_cdk_careband_iot_stack_1.AwsCdkCarebandIotStack(app, 'AwsCdkCarebandIotStackEast1', {
+    env: { region: "us-east-1" },
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXdzLWNkay1jYXJlYmFuZC1pb3QuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJhd3MtY2RrLWNhcmViYW5kLWlvdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFDQSx1Q0FBcUM7QUFDckMscUNBQXFDO0FBQ3JDLGtGQUEyRTtBQUUzRSxNQUFNLEdBQUcsR0FBRyxJQUFJLEdBQUcsQ0FBQyxHQUFHLEVBQUUsQ0FBQztBQUMxQixtRUFBbUU7QUFDbkUsb0NBQW9DO0FBQ3BDLE1BQU07QUFFTixJQUFJLG1EQUFzQixDQUFDLEdBQUcsRUFBRSw2QkFBNkIsRUFBRTtJQUMzRCxHQUFHLEVBQUUsRUFBRSxNQUFNLEVBQUUsV0FBVyxFQUFFO0NBQy9CLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIiMhL3Vzci9iaW4vZW52IG5vZGVcbmltcG9ydCAnc291cmNlLW1hcC1zdXBwb3J0L3JlZ2lzdGVyJztcbmltcG9ydCAqIGFzIGNkayBmcm9tICdAYXdzLWNkay9jb3JlJztcbmltcG9ydCB7IEF3c0Nka0NhcmViYW5kSW90U3RhY2sgfSBmcm9tICcuLi9saWIvYXdzLWNkay1jYXJlYmFuZC1pb3Qtc3RhY2snO1xuXG5jb25zdCBhcHAgPSBuZXcgY2RrLkFwcCgpO1xuLy8gbmV3IEF3c0Nka0NhcmViYW5kSW90U3RhY2soYXBwLCAnQXdzQ2RrQ2FyZWJhbmRJb3RTdGFja1dlc3QyJywge1xuLy8gICAgIGVudjogeyByZWdpb246IFwidXMtd2VzdC0yXCIgfSxcbi8vIH0pO1xuXG5uZXcgQXdzQ2RrQ2FyZWJhbmRJb3RTdGFjayhhcHAsICdBd3NDZGtDYXJlYmFuZElvdFN0YWNrRWFzdDEnLCB7XG4gICAgZW52OiB7IHJlZ2lvbjogXCJ1cy1lYXN0LTFcIiB9LFxufSk7XG4iXX0=
