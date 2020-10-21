@@ -50,18 +50,18 @@ The stack consists of:
 * Install AWS CDK
 First create the AWS CDK Toolkit. The toolkit is a command-line utility which allows you to work with CDK apps.
 
-    ```sh
+    ```bash
     $ npm install -g aws-cdk
     ```
 
 * Upgrade AWS CDK
 
-    ```sh
+    ```bash
     $ npm upgrade -g aws-cdk
     ```
 
 * Create a CDK project
-    ```sh
+    ```bash
     mkdir aws-cdk-caraeband-iot
     cd aws-cdk-caraeband-iot
     cdk init app -l typescript
@@ -138,14 +138,14 @@ First create the AWS CDK Toolkit. The toolkit is a command-line utility which al
     dynamoDBTable.grantReadWriteData(safeTrackDataLmabda);
 ```
 * Bootstrap an environment
-```sh
+```bash
 $ npm install
 $ npm run build
 $ cdk bootstrap
 ```
 
 * Deploy the stack
-```sh
+```bash
 $ cdk synth
 $ cdk deploy
 ```
