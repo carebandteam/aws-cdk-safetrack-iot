@@ -105,7 +105,7 @@ First create the AWS CDK Toolkit. The toolkit is a command-line utility which al
 
     const orderSafeTrackHttpApi = new HttpApi(this, 'OrderSafeTrackHttpApi', {
       apiName: 'order-safetrack-lite-integration',
-    });ndler: safeTrackApiLambda,
+      hanndler: safeTrackApiLambda,
     });
 ```
 * Create an HTTP Api Route
