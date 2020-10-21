@@ -1,6 +1,12 @@
 ## Build and Deploy a Contact Tracing Solution with AWS IoT Core & SafeTrack Lite
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiSy9rWmVENzRDbXBoVlhYaHBsNks4OGJDRXFtV1IySmhCVjJoaytDU2dtVWhhVys3NS9Odk5DbC9lR2JUTkRvSWlHSXZrNVhYQ3ZsaUJFY3o4OERQY1pnPSIsIml2UGFyYW1ldGVyU3BlYyI6IlB3ODEyRW9KdU0yaEp6NDkiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/aws/aws-cdk)
+[![NPM version](https://badge.fury.io/js/aws-cdk.svg)](https://badge.fury.io/js/aws-cdk)
+[![PyPI version](https://badge.fury.io/py/aws-cdk.core.svg)](https://badge.fury.io/py/aws-cdk.core)
+[![NuGet version](https://badge.fury.io/nu/Amazon.CDK.svg)](https://badge.fury.io/nu/Amazon.CDK)
+
 
 ### Architecture
 
@@ -45,13 +51,13 @@ The stack consists of:
 First create the AWS CDK Toolkit. The toolkit is a command-line utility which allows you to work with CDK apps.
 
     ```sh
-    npm install -g aws-cdk
+    $ npm install -g aws-cdk
     ```
 
 * Upgrade AWS CDK
 
     ```sh
-    npm upgrade -g aws-cdk
+    $ npm upgrade -g aws-cdk
     ```
 
 * Create a CDK project
@@ -133,14 +139,14 @@ First create the AWS CDK Toolkit. The toolkit is a command-line utility which al
 ```
 * Bootstrap an environment
 ```sh
-npm install
-npm run build
-cdk bootstrap
+$ npm install
+$ npm run build
+$ cdk bootstrap
 ```
 
 * Deploy the stack
 ```sh
-cdk synth
-cdk deploy
+$ cdk synth
+$ cdk deploy
 ```
 
