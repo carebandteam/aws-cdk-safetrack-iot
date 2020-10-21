@@ -133,7 +133,6 @@ First create the AWS CDK Toolkit. The toolkit is a command-line utility which al
     //Grant ReadWrite access of DynamoDB Table to Lambda Functions
 
     dynamoDBTable.grantReadWriteData(safeTrackApiLambda);
-
     dynamoDBTable.grantReadWriteData(safeTrackDataLmabda);
 ```
 * Bootstrap an environment
